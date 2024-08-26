@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <img class="logo" src="/essets/Logo.png" alt="logo de alura">
+        </header>
+        <section class="textoEntrada">
+            <textarea class="input" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        </section>
+        <div class="aviso">
+            <h6> <img src="/essets/aviso.png" alt=""> Solo letras minúsculas y sin acentos</h6>
+        </div>
+        <div class="botones">
+            <div>
+                <button class="btnEncriptar" onclick="botonEncriptar()">Encriptar</button>
+            </div>
+             <div>
+                <button class="btnDesencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <section class="textoSalida">
+            <textarea readonly class="output" style="display: none" cols="30" rows="10"></textarea>
+            <div class="imagen">
+                <img class="muneco" src="/essets/Muñeco.png" alt="Muñeco observando con lupa">
+            </div>
+            <div class="informacion">
+                <button class="btnCopiar" onclick="copiarAlPortapapeles()" style="display: none" >Copiar</button>
+                <p  class="info1" >Ningún mensaje fue encontrado</p>
+                <p class="info2" >Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>    
+        </section>
+        <footer class="footer">
+            <h3>Desarrollado por Kevin Morales González</h3>
+        </footer>   
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
